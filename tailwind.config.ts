@@ -9,22 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Warm paper and a single earth brown, taken from the logo.
+        // Sampled from the logo artwork: its ink and its paper.
         cream: {
-          DEFAULT: "#F2EADC",
-          dark: "#E8DCC8",
+          DEFAULT: "#E8DFD0",
+          dark: "#DCD0BC",
         },
         ink: {
-          DEFAULT: "#2B2117",
-          muted: "#5A4834",
-          soft: "#6F604A",
+          DEFAULT: "#2A2117",
+          muted: "#56452F",
+          soft: "#665844",
         },
         accent: {
-          DEFAULT: "#6E4F2C",
-          light: "#8E6C3F",
-          dark: "#523719",
+          DEFAULT: "#624B33",
+          light: "#82684A",
+          dark: "#47351F",
         },
-        line: "#DED0B8",
+        line: "#D3C5AE",
       },
       fontFamily: {
         display: ["var(--font-cormorant)", "Georgia", "serif"],
@@ -37,8 +37,8 @@ const config: Config = {
         DEFAULT: "280ms",
       },
       boxShadow: {
-        soft: "0 24px 64px -32px rgba(43, 33, 23, 0.18)",
-        search: "0 32px 80px -40px rgba(43, 33, 23, 0.22)",
+        soft: "0 24px 64px -32px rgba(42, 33, 23, 0.18)",
+        search: "0 32px 80px -40px rgba(42, 33, 23, 0.22)",
       },
     },
   },
