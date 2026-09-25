@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
-import { AntaraLogo } from "@/components/brand/AntaraLogo";
+import { AntaraWordmark } from "@/components/brand/AntaraWordmark";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 
 const links = [
@@ -51,7 +51,7 @@ export function Navbar() {
               scrolled || menuOpen ? "text-ink" : "text-cream",
             )}
           >
-            <AntaraLogo className="h-8 w-auto md:h-9" />
+            <AntaraWordmark className="h-8 w-auto md:h-9" />
           </Link>
 
           <nav

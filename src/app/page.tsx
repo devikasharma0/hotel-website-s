@@ -6,7 +6,7 @@ import { HotelGrid } from "@/components/hotels/HotelGrid";
 import { ReviewCarousel } from "@/components/reviews/ReviewCarousel";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { AntaraEmblem } from "@/components/brand/AntaraEmblem";
+import { AntaraMark } from "@/components/brand/AntaraMark";
 import { experienceCategories, galleryImages, testimonials } from "@/data/experiences";
 import { getAllDestinations } from "@/lib/destinations";
 import { getFeaturedHotels } from "@/lib/hotels";
@@ -100,7 +100,7 @@ export default function HomePage() {
           />
         </div>
         <div className="flex flex-col justify-center bg-ink px-8 py-16 text-cream md:px-14 md:py-20">
-          <AntaraEmblem className="mb-8 h-40 w-auto text-cream/80 md:h-48" />
+          <AntaraMark className="mb-8 h-24 w-auto text-cream/85 md:h-28" />
           <p className="text-xs uppercase tracking-[0.22em] text-cream/60">
             Our story
           </p>

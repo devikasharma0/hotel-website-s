@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { AntaraEmblem } from "@/components/brand/AntaraEmblem";
+import { AntaraMark } from "@/components/brand/AntaraMark";
 
 export const metadata: Metadata = {
   title: "About",
@@ -46,7 +46,7 @@ export default function AboutPage() {
       </div>
       <section className="bg-ink py-20 text-cream md:py-28">
         <div className="mx-auto flex max-w-content flex-col items-center px-5 text-center md:px-8">
-          <AntaraEmblem className="h-48 w-auto text-cream md:h-60" />
+          <AntaraMark className="h-44 w-auto text-cream md:h-56" />
           <p className="mt-10 text-xs font-medium uppercase tracking-[0.22em] text-cream/55">
             The name
           </p>
@@ -55,12 +55,12 @@ export default function AboutPage() {
           </h2>
           <p className="mt-6 max-w-xl text-sm leading-relaxed text-cream/75 md:text-base">
             <span className="tracking-normal text-cream">अन्तर</span> — the
-            inner, the interval, the room beyond the door. Our emblem is a
-            torana, the onion-crowned threshold of Indian architecture and the
-            oldest gesture of welcome there is. Held inside it, a lotus in full
-            bloom with a flame at its heart. It is the promise we make at every
-            property: that what waits past the doorway is worth the journey to
-            it.
+            inner, the interval, the still space a journey is really for. Our
+            mark is a hamsa, the swan of Indian iconography, said to drink the
+            milk and leave the water behind: discernment, which is the work a
+            good hotel does on a guest&rsquo;s behalf. It is drawn in one
+            unbroken line, and where its wing would fall a lotus opens instead
+            — the two sharing a single body, as a place and a stay should.
           </p>
         </div>
       </section>
