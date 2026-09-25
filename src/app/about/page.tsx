@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { AntaraEmblem } from "@/components/brand/AntaraEmblem";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "The story behind Meridian Collection boutique hotels and retreats.",
+  description: "The story behind Antara boutique hotels and retreats.",
 };
 
 export default function AboutPage() {
@@ -26,7 +27,7 @@ export default function AboutPage() {
       </section>
       <div className="mx-auto max-w-content px-5 py-16 md:px-8 md:py-24">
         <SectionHeading
-          eyebrow="Meridian Collection"
+          eyebrow="Antara"
           title="Independent hospitality, elevated with care"
         />
         <div className="prose prose-neutral mt-8 max-w-3xl text-ink-muted">
@@ -43,6 +44,26 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
+      <section className="bg-ink py-20 text-cream md:py-28">
+        <div className="mx-auto flex max-w-content flex-col items-center px-5 text-center md:px-8">
+          <AntaraEmblem className="h-48 w-auto text-cream md:h-60" />
+          <p className="mt-10 text-xs font-medium uppercase tracking-[0.22em] text-cream/55">
+            The name
+          </p>
+          <h2 className="mt-4 font-display text-3xl leading-tight md:text-4xl">
+            Antara — the space within
+          </h2>
+          <p className="mt-6 max-w-xl text-sm leading-relaxed text-cream/75 md:text-base">
+            <span className="tracking-normal text-cream">अन्तर</span> — the
+            inner, the interval, the room beyond the door. Our emblem is a
+            torana, the onion-crowned threshold of Indian architecture and the
+            oldest gesture of welcome there is. Held inside it, a lotus in full
+            bloom with a flame at its heart. It is the promise we make at every
+            property: that what waits past the doorway is worth the journey to
+            it.
+          </p>
+        </div>
+      </section>
     </>
   );
 }

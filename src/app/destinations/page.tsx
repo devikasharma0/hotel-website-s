@@ -6,7 +6,7 @@ import { getAllDestinations } from "@/lib/destinations";
 export const metadata: Metadata = {
   title: "Destinations",
   description:
-    "Explore mountain, forest, and coastal destinations across India with Meridian Collection.",
+    "Explore mountain, forest, and coastal destinations across India with Antara.",
 };
 
 export default function DestinationsPage() {

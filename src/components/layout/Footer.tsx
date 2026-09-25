@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site";
+import { AntaraLogo } from "@/components/brand/AntaraLogo";
 
 const explore = [
   { href: "/hotels", label: "Hotels" },
@@ -28,7 +29,7 @@ export function Footer() {
     <footer className="border-t border-line bg-ink text-cream">
       <div className="mx-auto grid max-w-content gap-12 px-5 py-16 md:grid-cols-2 md:px-8 lg:grid-cols-5">
         <div className="lg:col-span-2">
-          <p className="font-display text-2xl">{siteConfig.name}</p>
+          <AntaraLogo className="h-10 w-auto text-cream" />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/75">
             {siteConfig.description}
           </p>

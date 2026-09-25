@@ -9,7 +9,7 @@ export default function TermsPage() {
   return (
     <LegalLayout title="Terms of use">
       <p>
-        These terms govern use of the Meridian Collection website and booking
+        These terms govern use of the Antara website and booking
         interface. Replace with finalized legal language prior to production.
       </p>
       <p>

@@ -57,7 +57,7 @@ export const testimonials: Testimonial[] = [
     id: "t2",
     guestName: "Arjun & Neha",
     rating: 5,
-    text: "We wanted quiet, not isolation. Meridian properties strike that balance beautifully.",
+    text: "We wanted quiet, not isolation. Antara properties strike that balance beautifully.",
     stayLocation: "Laterite Shores, Goa",
   },
   {

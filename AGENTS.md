@@ -4,7 +4,7 @@ Guidance for AI coding agents working in this repository.
 
 ## Project overview
 
-**Meridian Collection** — premium boutique hotel website (Next.js 15, TypeScript, Tailwind). Original brand inspired by [echor.in](https://echor.in/) UX patterns, not a copy. Mock booking flow; connect backend/payment later.
+**Antara** — premium boutique hotel website (Next.js 15, TypeScript, Tailwind). Original brand inspired by [echor.in](https://echor.in/) UX patterns, not a copy. Mock booking flow; connect backend/payment later.
 
 ## Repository layout
 

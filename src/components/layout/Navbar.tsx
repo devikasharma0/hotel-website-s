@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
+import { AntaraLogo } from "@/components/brand/AntaraLogo";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 
 const links = [
@@ -44,12 +45,13 @@ export function Navbar() {
         <div className="mx-auto flex max-w-content items-center justify-between gap-4 px-5 py-4 md:px-8">
           <Link
             href="/"
+            aria-label={siteConfig.name}
             className={cn(
-              "font-display text-xl tracking-wide md:text-2xl",
+              "transition-colors",
               scrolled || menuOpen ? "text-ink" : "text-cream",
             )}
           >
-            {siteConfig.name}
+            <AntaraLogo className="h-8 w-auto md:h-9" />
           </Link>
 
           <nav

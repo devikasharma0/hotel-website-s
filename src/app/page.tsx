@@ -6,6 +6,7 @@ import { HotelGrid } from "@/components/hotels/HotelGrid";
 import { ReviewCarousel } from "@/components/reviews/ReviewCarousel";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { AntaraEmblem } from "@/components/brand/AntaraEmblem";
 import { experienceCategories, galleryImages, testimonials } from "@/data/experiences";
 import { getAllDestinations } from "@/lib/destinations";
 import { getFeaturedHotels } from "@/lib/hotels";
@@ -99,6 +100,7 @@ export default function HomePage() {
           />
         </div>
         <div className="flex flex-col justify-center bg-ink px-8 py-16 text-cream md:px-14 md:py-20">
+          <AntaraEmblem className="mb-8 h-40 w-auto text-cream/80 md:h-48" />
           <p className="text-xs uppercase tracking-[0.22em] text-cream/60">
             Our story
           </p>
@@ -106,7 +108,7 @@ export default function HomePage() {
             Hospitality that feels personal — because it is.
           </h2>
           <p className="mt-6 text-sm leading-relaxed text-cream/80 md:text-base">
-            Meridian Collection began with a simple belief: where you stay should
+            Antara began with a simple belief: where you stay should
             deepen where you are. We partner with independent properties, train
             teams in warm, unobtrusive service, and design every touchpoint to
             feel calm, honest, and beautifully considered.

@@ -3,7 +3,7 @@ import { ContactForm } from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Meridian Collection for reservations and travel planning.",
+  description: "Contact Antara for reservations and travel planning.",
 };
 
 export default function ContactPage() {

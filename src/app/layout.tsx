@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "Meridian Collection hospitality",
+        alt: "Antara hospitality",
       },
     ],
   },

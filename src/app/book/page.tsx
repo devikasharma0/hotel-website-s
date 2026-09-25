@@ -4,7 +4,7 @@ import { BookingFlow } from "@/components/booking/BookingFlow";
 
 export const metadata: Metadata = {
   title: "Book your stay",
-  description: "Search availability and complete your reservation with Meridian Collection.",
+  description: "Search availability and complete your reservation with Antara.",
 };
 
 export default function BookPage() {

@@ -1,4 +1,4 @@
-# Meridian Collection — hotel website
+# Antara — hotel website
 
 Premium boutique hospitality marketing site built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**. Inspired by the information architecture of [echor.in](https://echor.in/) with original brand, copy, and design.
 

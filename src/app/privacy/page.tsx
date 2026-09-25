@@ -9,7 +9,7 @@ export default function PrivacyPage() {
   return (
     <LegalLayout title="Privacy policy">
       <p>
-        This placeholder privacy policy describes how Meridian Collection would
+        This placeholder privacy policy describes how Antara would
         collect, use, and protect guest information. Replace this text with counsel-approved
         copy before launch.
       </p>

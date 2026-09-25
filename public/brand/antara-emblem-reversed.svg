@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="17 3 326 434" width="326" height="434" role="img" color="#F7F4EF" fill="none">
+  <title>Antara emblem (reversed)</title>
+  <desc>An onion-arched doorway framing a lotus in full bloom: solid petals and a flame at the centre, an open fan of petals behind, and a line of beads tracing the inside of the arch.</desc>
+<!--
+  ANTARA — hotels & retreats
+  ══════════════════════════════════════════════════════════════════════
+  Antara (Sanskrit अन्तर) — the inner, the space within, the interval.
+
+  The emblem is a view through a doorway. The frame is a torana, the
+  onion-crowned threshold of Indian architecture and the oldest gesture
+  of welcome there is; the beading inside its crown is block-print, the
+  language of a woodblock pressed onto cloth. Held inside it, a lotus in
+  full bloom — solid petals in front, the open fan behind, a flame rising
+  from its heart. The devotion is carried by the architecture, not
+  declared: no deity, no om, nothing that dates it or narrows who it is
+  for. Guests who know temple forms read a shrine door. Everyone else
+  reads a flower opening in an archway.
+
+  Colour — one ink, inherited through `currentColor`:
+    ink    #1C1B19   default
+    accent #8B7355   foil, brass, blind emboss
+    cream  #F7F4EF   reversed out of ink or photography
+  Override with CSS `color`, or edit the `color` attribute on <svg>.
+  Recolouring only works when the SVG is INLINE; through <img> it keeps
+  the baked colour, which is why a reversed file ships alongside.
+
+  Clear space: the width of one jamb on every side.
+  Sizes: emblem lockup at 30mm / 120px and up. Below that use the
+  horizontal lockup; below 16mm / 64px use the mark alone.
+-->
+  <g fill="none" stroke="currentColor" stroke-linejoin="round">
+    <path d="M 44,410 L 44,270 C 21.29,210 34.89,165 62.09,142.8 C 89.29,105 152.8,60 180,30 C 207.2,60 270.71,105 297.91,142.8 C 325.11,165 338.71,210 316,270 L 316,410 Z" stroke-width="2.2"/>
+    <path d="M 55,399 L 55,270 C 34.12,212.75 46.62,169.81 71.62,148.63 C 96.62,112.56 155,69.62 180,41 C 205,69.62 263.38,112.56 288.38,148.63 C 313.38,169.81 325.88,212.75 305,270 L 305,399 Z" stroke-width="4.6"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M 134.21,349.38 C 127.67,335.91 111.91,325.25 94.04,317.96 C 87.74,316.07 83.51,315.66 80.44,315.79 C 81.67,318.6 83.89,322.23 88.35,327.06 C 102.74,339.93 119.23,349.42 134.21,349.38 Z"/>
+    <path d="M 139.66,342.1 C 132.64,324.27 113.98,306.65 92.44,292.27 C 84.8,287.99 79.59,286.12 75.78,285.26 C 77.09,288.93 79.54,293.89 84.68,300.98 C 101.47,320.71 121.13,337.2 139.66,342.1 Z"/>
+    <path d="M 146.26,335.84 C 137.59,308.79 113.42,277.17 85.29,248.71 C 75.28,239.73 68.42,235.03 63.38,232.26 C 64.98,237.78 68.06,245.51 74.63,257.24 C 96.22,290.93 121.78,321.45 146.26,335.84 Z"/>
+    <path d="M 153.82,330.77 C 147.66,296.77 124.71,253.38 96.91,212.68 C 86.87,199.54 79.79,192.24 74.51,187.69 C 75.57,194.58 78.01,204.45 83.83,219.93 C 103.61,265.08 128.25,307.53 153.82,330.77 Z"/>
+    <path d="M 162.12,327.05 C 161.01,288.43 143.7,236 120.85,185.52 C 112.35,169 106.05,159.51 101.2,153.41 C 101.23,161.2 102.24,172.54 105.92,190.75 C 119.62,244.45 138.86,296.2 162.12,327.05 Z"/>
+    <path d="M 170.93,324.77 C 176.25,281.17 166.73,218.75 151.01,157.39 C 144.79,137.11 139.7,125.16 135.6,117.33 C 134.32,126.08 133.48,139.03 134.32,160.24 C 139.8,223.34 151.48,285.39 170.93,324.77 Z"/>
+    <path d="M 180,324 C 193.89,273.4 195.1,197.5 189.36,121.6 C 186.34,96.3 183.02,81.12 180,71 C 176.98,81.12 173.66,96.3 170.64,121.6 C 164.9,197.5 166.11,273.4 180,324 Z"/>
+    <path d="M 189.07,324.77 C 208.52,285.39 220.2,223.34 225.68,160.24 C 226.52,139.03 225.68,126.08 224.4,117.33 C 220.3,125.16 215.21,137.11 208.99,157.39 C 193.27,218.75 183.75,281.17 189.07,324.77 Z"/>
+    <path d="M 197.88,327.05 C 221.14,296.2 240.38,244.45 254.08,190.75 C 257.76,172.54 258.77,161.2 258.8,153.41 C 253.95,159.51 247.65,169 239.15,185.52 C 216.3,236 198.99,288.43 197.88,327.05 Z"/>
+    <path d="M 206.18,330.77 C 231.75,307.53 256.39,265.08 276.17,219.93 C 281.99,204.45 284.43,194.58 285.49,187.69 C 280.21,192.24 273.13,199.54 263.09,212.68 C 235.29,253.38 212.34,296.77 206.18,330.77 Z"/>
+    <path d="M 213.74,335.84 C 238.22,321.45 263.78,290.93 285.37,257.24 C 291.94,245.51 295.02,237.78 296.62,232.26 C 291.58,235.03 284.72,239.73 274.71,248.71 C 246.58,277.17 222.41,308.79 213.74,335.84 Z"/>
+    <path d="M 220.34,342.1 C 238.87,337.2 258.53,320.71 275.32,300.98 C 280.46,293.89 282.91,288.93 284.22,285.26 C 280.41,286.12 275.2,287.99 267.56,292.27 C 246.02,306.65 227.36,324.27 220.34,342.1 Z"/>
+    <path d="M 225.79,349.38 C 240.77,349.42 257.26,339.93 271.65,327.06 C 276.11,322.23 278.33,318.6 279.56,315.79 C 276.49,315.66 272.26,316.07 265.96,317.96 C 248.09,325.25 232.33,335.91 225.79,349.38 Z"/>
+  </g>
+  <g fill="currentColor">
+    <circle cx="107.32" cy="332.59" r="3.51"/>
+    <circle cx="107.72" cy="313.68" r="3.68"/>
+    <circle cx="118.63" cy="301.31" r="4.06"/>
+    <circle cx="91.01" cy="266.79" r="4.06"/>
+    <circle cx="127.38" cy="283.08" r="4.31"/>
+    <circle cx="100.94" cy="235.38" r="4.31"/>
+    <circle cx="141.82" cy="269.17" r="4.4"/>
+    <circle cx="121.51" cy="211.29" r="4.4"/>
+    <circle cx="162.1" cy="272.91" r="4.4"/>
+    <circle cx="153.27" cy="221.05" r="4.4"/>
+    <circle cx="144.43" cy="169.19" r="4.4"/>
+    <circle cx="180" cy="260.75" r="4.4"/>
+    <circle cx="180" cy="197.5" r="4.4"/>
+    <circle cx="180" cy="134.25" r="4.4"/>
+    <circle cx="197.9" cy="272.91" r="4.4"/>
+    <circle cx="206.73" cy="221.05" r="4.4"/>
+    <circle cx="215.57" cy="169.19" r="4.4"/>
+    <circle cx="218.18" cy="269.17" r="4.4"/>
+    <circle cx="238.49" cy="211.29" r="4.4"/>
+    <circle cx="232.62" cy="283.08" r="4.31"/>
+    <circle cx="259.06" cy="235.38" r="4.31"/>
+    <circle cx="241.37" cy="301.31" r="4.06"/>
+    <circle cx="268.99" cy="266.79" r="4.06"/>
+    <circle cx="252.28" cy="313.68" r="3.68"/>
+    <circle cx="252.68" cy="332.59" r="3.51"/>
+  </g>
+  <g fill="currentColor">
+    <circle cx="70" cy="270" r="3.1"/>
+    <circle cx="62.86" cy="242.66" r="3.1"/>
+    <circle cx="60.83" cy="213.56" r="3.1"/>
+    <circle cx="66.1" cy="185.25" r="3.1"/>
+    <circle cx="80.09" cy="161.13" r="3.1"/>
+    <circle cx="98.89" cy="138.02" r="3.1"/>
+    <circle cx="116.76" cy="118.91" r="3.1"/>
+    <circle cx="136.24" cy="99.93" r="3.1"/>
+    <circle cx="155.32" cy="81.74" r="3.1"/>
+    <circle cx="174.86" cy="61.93" r="3.1"/>
+    <circle cx="194.26" cy="71.5" r="3.1"/>
+    <circle cx="215.97" cy="92.52" r="3.1"/>
+    <circle cx="235.52" cy="111.27" r="3.1"/>
+    <circle cx="254.28" cy="130.41" r="3.1"/>
+    <circle cx="272.9" cy="152.95" r="3.1"/>
+    <circle cx="289.52" cy="175.13" r="3.1"/>
+    <circle cx="297.82" cy="200.65" r="3.1"/>
+    <circle cx="298.98" cy="227.58" r="3.1"/>
+    <circle cx="294.92" cy="253.27" r="3.1"/>
+  </g>
+  <path d="M 180,399 C 204.15,387.38 222.56,359.24 236,322.89 C 236.03,315.07 237.02,307.83 237.68,303 C 233.73,305.85 227.8,310.13 220.91,313.83 C 195.13,342.76 178.92,372.22 180,399 Z M 180,399 C 181.08,372.22 164.87,342.76 139.09,313.83 C 132.2,310.13 126.27,305.85 122.32,303 C 122.98,307.83 123.97,315.07 124,322.89 C 137.44,359.24 155.85,387.38 180,399 Z M 180,399 C 201.23,402.3 224.54,391.17 247.4,371.88 C 250.31,366.37 253.68,361.72 255.93,358.63 C 252.11,358.76 246.37,358.95 240.17,358.29 C 211.39,366.45 189.14,379.55 180,399 Z M 180,399 C 170.86,379.55 148.61,366.45 119.83,358.29 C 113.63,358.95 107.89,358.76 104.07,358.63 C 106.32,361.72 109.69,366.37 112.6,371.88 C 135.46,391.17 158.77,402.3 180,399 Z M 180,254 C 156,300 159,345 180,399 C 201,345 204,300 180,254 Z" fill="currentColor"/>
+</svg>
