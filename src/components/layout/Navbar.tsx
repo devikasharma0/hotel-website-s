@@ -79,7 +79,7 @@ export function Navbar() {
               variant={scrolled ? "primary" : "outline"}
               className={cn(
                 !scrolled &&
-                  "border-cream/40 text-cream hover:border-cream hover:bg-cream/10",
+                  "!border-cream/40 !text-cream hover:!border-cream hover:!bg-cream/10",
               )}
             >
               Book now
