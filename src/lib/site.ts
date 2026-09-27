@@ -26,7 +26,7 @@ export const siteConfig = {
    */
   contentUpdated: "2026-09-27",
   social: {
-    instagram: "https://instagram.com",
+    instagram: "https://www.instagram.com/antarahotels",
     facebook: "https://facebook.com",
     youtube: "https://youtube.com",
   },

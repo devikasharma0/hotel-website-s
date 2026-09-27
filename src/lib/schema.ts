@@ -48,7 +48,12 @@ export function organizationSchema() {
     telephone: siteConfig.contact.phone,
     address: postalAddress(siteConfig.contact.address),
     areaServed: { "@type": "Country", name: "India" },
-    sameAs: Object.values(siteConfig.social),
+    // Only real profiles belong in sameAs — a bare platform homepage tells a
+    // search or AI engine nothing about which "Antara" this is, and dilutes
+    // the profiles that do resolve. Placeholders drop out until filled in.
+    sameAs: Object.values(siteConfig.social).filter(
+      (url) => new URL(url).pathname.replace(/\/$/, "").length > 0,
+    ),
   };
 }
 
