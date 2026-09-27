@@ -3,6 +3,8 @@ import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { siteConfig } from "@/lib/site";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -35,10 +38,10 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
+        url: "/brand/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Antara hospitality",
+        alt: `${siteConfig.name} — ${siteConfig.tagline}`,
       },
     ],
   },
@@ -61,6 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
       <body className="min-h-screen">
+        <JsonLd schema={[organizationSchema(), websiteSchema()]} />
         <Navbar />
         <main>{children}</main>
         <Footer />

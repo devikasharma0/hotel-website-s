@@ -2,6 +2,8 @@ import { cn } from "@/lib/utils";
 import { type ReactNode } from "react";
 
 type Props = {
+  /** Use "h1" where this is the page's main heading. Defaults to "h2". */
+  as?: "h1" | "h2";
   eyebrow?: string;
   title: string;
   description?: string;
@@ -11,6 +13,7 @@ type Props = {
 };
 
 export function SectionHeading({
+  as: Heading = "h2",
   eyebrow,
   title,
   description,
@@ -31,9 +34,9 @@ export function SectionHeading({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="font-display text-3xl leading-tight text-ink md:text-4xl lg:text-[2.75rem]">
+      <Heading className="font-display text-3xl leading-tight text-ink md:text-4xl lg:text-[2.75rem]">
         {title}
-      </h2>
+      </Heading>
       {description ? (
         <p className="mt-4 text-base leading-relaxed text-ink-soft md:text-lg">
           {description}

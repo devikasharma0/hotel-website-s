@@ -8,7 +8,8 @@ import { Button } from "@/components/ui/Button";
 import { Rating } from "@/components/ui/Rating";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAllHotels, getHotelBySlug } from "@/lib/hotels";
-import { siteConfig } from "@/lib/site";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbSchema, hotelSchema } from "@/lib/schema";
 import { formatInr } from "@/lib/utils";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: hotel.name,
     description: hotel.shortDescription,
+    alternates: { canonical: `/hotels/${hotel.slug}` },
     openGraph: {
       title: hotel.name,
       description: hotel.shortDescription,
@@ -43,26 +45,17 @@ export default async function HotelDetailPage({ params }: Props) {
     span: i === 0 ? "md:col-span-2 md:row-span-2" : undefined,
   }));
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Hotel",
-    name: hotel.name,
-    description: hotel.description,
-    address: hotel.location,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: hotel.rating,
-      reviewCount: hotel.reviewCount,
-    },
-    priceRange: `₹${hotel.priceFrom}+`,
-    url: `${siteConfig.url}/hotels/${hotel.slug}`,
-  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      <JsonLd
+        schema={[
+          hotelSchema(hotel),
+          breadcrumbSchema([
+            { name: "Hotels", path: "/hotels" },
+            { name: hotel.name, path: `/hotels/${hotel.slug}` },
+          ]),
+        ]}
       />
       <HotelHero hotel={hotel} />
 

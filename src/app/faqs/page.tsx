@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/faqs" },
   title: "FAQs",
   description: "Booking policies and frequently asked questions.",
 };
@@ -28,7 +31,14 @@ const faqs = [
 export default function FaqsPage() {
   return (
     <div className="mx-auto max-w-content px-5 pb-20 pt-28 md:px-8 md:pt-32">
+      <JsonLd
+        schema={[
+          faqSchema(faqs, "/faqs"),
+          breadcrumbSchema([{ name: "FAQs", path: "/faqs" }]),
+        ]}
+      />
       <SectionHeading
+        as="h1"
         eyebrow="Support"
         title="Frequently asked questions"
         description="Quick answers about booking, stays, and policies."

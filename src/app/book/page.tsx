@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { BookingFlow } from "@/components/booking/BookingFlow";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/book" },
   title: "Book your stay",
   description: "Search availability and complete your reservation with Antara.",
 };

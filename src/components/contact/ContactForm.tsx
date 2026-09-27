@@ -35,6 +35,7 @@ export function ContactForm() {
       <div className="grid gap-12 lg:grid-cols-[1fr_380px]">
         <div>
           <SectionHeading
+            as="h1"
             eyebrow="Contact"
             title="We're here to help plan your stay"
             description="Share your dates and preferences — our reservations team responds within one business day."

@@ -79,6 +79,7 @@ export function BookingFlow() {
   return (
     <div className="mx-auto max-w-content px-5 pb-20 pt-28 md:px-8 md:pt-32">
       <SectionHeading
+            as="h1"
         eyebrow="Booking"
         title="Reserve your stay"
         description="Frontend booking flow with mock confirmation — ready to connect to your PMS or payment provider."

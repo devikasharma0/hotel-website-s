@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AntaraMark } from "@/components/brand/AntaraMark";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About",
   description: "The story behind Antara boutique hotels and retreats.",
 };

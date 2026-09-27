@@ -155,6 +155,7 @@ export function HotelsListing() {
   return (
     <div className="mx-auto max-w-content px-5 pb-20 pt-28 md:px-8 md:pt-32">
       <SectionHeading
+            as="h1"
         eyebrow="Hotels & retreats"
         title="Find your stay"
         description="Filter by destination, price, and amenities — then explore each property in detail."

@@ -5,6 +5,9 @@ import { siteConfig } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
+  // A build timestamp would tell crawlers every page changed on every deploy,
+  // which is a false freshness signal. Report when content actually changed.
+  const fallback = new Date(siteConfig.contentUpdated);
   const staticRoutes = [
     "",
     "/hotels",
@@ -21,19 +24,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes.map((path) => ({
       url: `${base}${path}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
+      lastModified: fallback,
+      changeFrequency: "monthly" as const,
       priority: path === "" ? 1 : 0.7,
     })),
     ...getAllHotels().map((h) => ({
       url: `${base}/hotels/${h.slug}`,
-      lastModified: new Date(),
+      lastModified: h.updatedAt ? new Date(h.updatedAt) : fallback,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })),
     ...getAllDestinations().map((d) => ({
       url: `${base}/destinations/${d.slug}`,
-      lastModified: new Date(),
+      lastModified: d.updatedAt ? new Date(d.updatedAt) : fallback,
       changeFrequency: "weekly" as const,
       priority: 0.75,
     })),

@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import { DestinationCard } from "@/components/destinations/DestinationCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAllDestinations } from "@/lib/destinations";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/destinations" },
   title: "Destinations",
   description:
     "Explore mountain, forest, and coastal destinations across India with Antara.",
@@ -14,7 +17,9 @@ export default function DestinationsPage() {
 
   return (
     <div className="mx-auto max-w-content px-5 pb-20 pt-28 md:px-8 md:pt-32">
+      <JsonLd schema={breadcrumbSchema([{ name: "Destinations", path: "/destinations" }])} />
       <SectionHeading
+        as="h1"
         eyebrow="Destinations"
         title="Where will you go next?"
         description="Each region offers a distinct rhythm — browse guides, stays, and travel notes for every destination."

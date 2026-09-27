@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { LegalLayout } from "@/components/legal/LegalLayout";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/cancellation-policy" },
   title: "Cancellation policy",
 };
 

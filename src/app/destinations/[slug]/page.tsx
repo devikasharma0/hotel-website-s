@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAllDestinations, getDestinationBySlug } from "@/lib/destinations";
 import { getHotelsByDestination } from "@/lib/hotels";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbSchema, destinationSchema } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -21,6 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: destination.name,
     description: destination.description,
+    alternates: { canonical: `/destinations/${destination.slug}` },
     openGraph: {
       title: `${destination.name} stays`,
       description: destination.tagline,
@@ -42,6 +45,15 @@ export default async function DestinationDetailPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        schema={[
+          destinationSchema(destination, hotels),
+          breadcrumbSchema([
+            { name: "Destinations", path: "/destinations" },
+            { name: destination.name, path: `/destinations/${destination.slug}` },
+          ]),
+        ]}
+      />
       <section className="relative min-h-[50vh] bg-ink">
         <Image
           src={destination.heroImage}

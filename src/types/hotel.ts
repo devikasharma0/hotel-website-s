@@ -40,6 +40,8 @@ export type Hotel = {
   experiences: string[];
   mapEmbedUrl: string;
   reviews: Review[];
+  /** ISO date; falls back to siteConfig.contentUpdated in the sitemap. */
+  updatedAt?: string;
 };
 
 export type Destination = {
@@ -52,6 +54,8 @@ export type Destination = {
   gallery: string[];
   travelTips: string[];
   highlights: string[];
+  /** ISO date; falls back to siteConfig.contentUpdated in the sitemap. */
+  updatedAt?: string;
 };
 
 export type ExperienceCategory = {
