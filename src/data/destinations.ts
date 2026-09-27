@@ -34,7 +34,7 @@ export const destinations: Destination[] = [
     gallery: [
       "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
-      "https://images.unsplash.com/photo-1518176258769-f227c798151e?w=1200&q=80",
+      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1200&q=80",
     ],
     travelTips: [
       "Monsoon trails can be slippery — plan guided walks if unsure.",
@@ -51,10 +51,10 @@ export const destinations: Destination[] = [
     description:
       "Dharamshala offers a rare mix of Tibetan culture and Himalayan scenery. Stay where pine forests meet prayer flags and sunrise paints the Dhauladhar range gold.",
     heroImage:
-      "https://images.unsplash.com/photo-1626621341517-bbf3d9950a84?w=2400&q=85",
+      "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=2400&q=85",
     gallery: [
-      "https://images.unsplash.com/photo-1542273916-4e3f1b09f936?w=1200&q=80",
-      "https://images.unsplash.com/photo-1506197603052-3f9c8a236625?w=1200&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
       "https://images.unsplash.com/photo-1528127269322-539801943592?w=1200&q=80",
     ],
     travelTips: [
@@ -74,7 +74,7 @@ export const destinations: Destination[] = [
     heroImage:
       "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&q=85",
     gallery: [
-      "https://images.unsplash.com/photo-1476514525535-07fb3b4d6760?w=1200&q=80",
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80",
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80",
       "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=1200&q=80",
     ],
@@ -117,7 +117,7 @@ export const destinations: Destination[] = [
       "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=2400&q=85",
     gallery: [
       "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=80",
-      "https://images.unsplash.com/photo-1518176258769-f227c798151e?w=1200&q=80",
+      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1200&q=80",
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
     ],
     travelTips: [
@@ -138,8 +138,8 @@ export const destinations: Destination[] = [
       "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=2400&q=85",
     gallery: [
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
-      "https://images.unsplash.com/photo-1473496169904-658ba44c7079?w=1200&q=80",
-      "https://images.unsplash.com/photo-1540202404-a7658080e04e?w=1200&q=80",
+      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1200&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80",
     ],
     travelTips: [
       "Monsoon brings lush greenery — some beach shacks may be closed.",

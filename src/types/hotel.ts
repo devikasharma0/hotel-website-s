@@ -2,7 +2,11 @@ export type Room = {
   id: string;
   slug: string;
   name: string;
+  /** Lead image — kept for cards and OG tags. */
   image: string;
+  /** Room gallery, for the carousel on the room card. */
+  images: string[];
+  description: string;
   occupancy: number;
   bedType: string;
   amenities: string[];
@@ -40,6 +44,13 @@ export type Hotel = {
   experiences: string[];
   mapEmbedUrl: string;
   reviews: Review[];
+  /** Long-form "about this property" copy, shown behind a Read more toggle. */
+  about: string[];
+  checkIn: string;
+  checkOut: string;
+  /** Ambient clip for the video band. Omit and the band is skipped. */
+  video?: { src: string; poster: string };
+  faqs: { q: string; a: string }[];
   /** ISO date; falls back to siteConfig.contentUpdated in the sitemap. */
   updatedAt?: string;
 };

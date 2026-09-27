@@ -1,4 +1,27 @@
 import type { Hotel, Review, Room } from "@/types/hotel";
+import { LOREM_FAQS, LOREM_LONG, LOREM_PARAGRAPH } from "@/lib/lorem";
+
+/**
+ * Extra licensed photography, pooled so every property has enough frames to
+ * fill a gallery. Rotated per hotel rather than shared verbatim, so two
+ * properties never open on the same picture.
+ */
+const GALLERY_POOL = [
+  "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1600&q=85",
+  "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1600&q=85",
+  "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1600&q=85",
+  "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=1600&q=85",
+  "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=1600&q=85",
+  "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1600&q=85",
+  "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1600&q=85",
+  "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1600&q=85",
+  "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1600&q=85",
+  "https://images.unsplash.com/photo-1559599189-fe84dea4eb79?w=1600&q=85",
+  "https://images.unsplash.com/photo-1528127269322-539801943592?w=1600&q=85",
+  "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&q=85",
+];
+
+const GALLERY_SIZE = 14;
 
 const defaultReviews = (location: string): Review[] => [
   {
@@ -34,6 +57,8 @@ function rooms(prefix: string, basePrice: number, images: string[]): Room[] {
       slug: "garden-suite",
       name: "Garden Suite",
       image: images[0],
+      images: [images[0], images[1] ?? images[0], images[2] ?? images[0]],
+      description: LOREM_PARAGRAPH,
       occupancy: 2,
       bedType: "King",
       amenities: ["Rain shower", "Workspace", "Tea station", "Wi‑Fi"],
@@ -45,6 +70,8 @@ function rooms(prefix: string, basePrice: number, images: string[]): Room[] {
       slug: "valley-room",
       name: "Valley View Room",
       image: images[1] ?? images[0],
+      images: [images[1] ?? images[0], images[2] ?? images[0], images[0]],
+      description: LOREM_PARAGRAPH,
       occupancy: 3,
       bedType: "Queen + single",
       amenities: ["Balcony", "Heater", "Wi‑Fi", "In-room dining"],
@@ -56,6 +83,8 @@ function rooms(prefix: string, basePrice: number, images: string[]): Room[] {
       slug: "family-retreat",
       name: "Family Retreat",
       image: images[2] ?? images[0],
+      images: [images[2] ?? images[0], images[0], images[1] ?? images[0]],
+      description: LOREM_PARAGRAPH,
       occupancy: 4,
       bedType: "Two queens",
       amenities: ["Living nook", "Bathtub", "Wi‑Fi", "Kids welcome kit"],
@@ -65,7 +94,7 @@ function rooms(prefix: string, basePrice: number, images: string[]): Room[] {
   ];
 }
 
-export const hotels: Hotel[] = [
+const baseHotels: BaseHotel[] = [
   {
     id: "h1",
     slug: "cedar-ridge-manali",
@@ -96,7 +125,7 @@ export const hotels: Hotel[] = [
     rooms: rooms("cedar", 8500, [
       "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
       "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80",
-      "https://images.unsplash.com/photo-1618773928123-c322d133b295?w=1200&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80",
     ]),
     priceFrom: 8500,
     propertyType: "Boutique retreat",
@@ -133,7 +162,7 @@ export const hotels: Hotel[] = [
       "Pet friendly",
     ],
     rooms: rooms("parvati", 7200, [
-      "https://images.unsplash.com/photo-1598928506311-c55ded39a2be?w=1200&q=80",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80",
       "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1200&q=80",
       "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80",
     ]),
@@ -157,15 +186,15 @@ export const hotels: Hotel[] = [
       "Perched where the ridge opens to the range, Dhauladhar Villa pairs Tibetan craft with contemporary lines. Mornings are for monastery bells in the distance; afternoons for tea on the terrace.",
     shortDescription: "Ridge-top villa with monastery views and refined calm.",
     images: [
-      "https://images.unsplash.com/photo-1626621341517-bbf3d9950a84?w=1600&q=85",
-      "https://images.unsplash.com/photo-1542273916-4e3f1b09f936?w=1600&q=85",
+      "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=85",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1600&q=85",
       "https://images.unsplash.com/photo-1528127269322-539801943592?w=1600&q=85",
     ],
     rating: 4.9,
     reviewCount: 112,
     amenities: ["Spa", "Restaurant", "Wi‑Fi", "Mountain view", "Workspace"],
     rooms: rooms("dhauladhar", 9800, [
-      "https://images.unsplash.com/photo-1611892440507-42a784e015da?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
       "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=1200&q=80",
       "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
     ]),
@@ -190,7 +219,7 @@ export const hotels: Hotel[] = [
     shortDescription: "Meadow views, fireside dining, and unhurried days.",
     images: [
       "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600&q=85",
-      "https://images.unsplash.com/photo-1476514525535-07fb3b4d6760?w=1600&q=85",
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1600&q=85",
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&q=85",
     ],
     rating: 4.7,
@@ -199,7 +228,7 @@ export const hotels: Hotel[] = [
     rooms: rooms("meadow", 7900, [
       "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80",
       "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1200&q=80",
-      "https://images.unsplash.com/photo-1618773928123-c322d133b295?w=1200&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80",
     ]),
     priceFrom: 7900,
     propertyType: "Heritage lodge",
@@ -231,8 +260,8 @@ export const hotels: Hotel[] = [
     amenities: ["Pool", "Restaurant", "Spa", "Wi‑Fi", "Bonfire"],
     rooms: rooms("kosi", 11200, [
       "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80",
-      "https://images.unsplash.com/photo-1598928506311-c55ded39a2be?w=1200&q=80",
-      "https://images.unsplash.com/photo-1611892440507-42a784e015da?w=1200&q=80",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
     ]),
     priceFrom: 11200,
     propertyType: "Safari lodge",
@@ -256,7 +285,7 @@ export const hotels: Hotel[] = [
     images: [
       "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600&q=85",
       "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1600&q=85",
-      "https://images.unsplash.com/photo-1518176258769-f227c798151e?w=1600&q=85",
+      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1600&q=85",
     ],
     rating: 4.9,
     reviewCount: 77,
@@ -289,13 +318,13 @@ export const hotels: Hotel[] = [
     images: [
       "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1600&q=85",
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=85",
-      "https://images.unsplash.com/photo-1473496169904-658ba44c7079?w=1600&q=85",
+      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1600&q=85",
     ],
     rating: 4.8,
     reviewCount: 156,
     amenities: ["Pool", "Restaurant", "Spa", "Wi‑Fi", "Pet friendly"],
     rooms: rooms("laterite", 12500, [
-      "https://images.unsplash.com/photo-1618773928123-c322d133b295?w=1200&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80",
       "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80",
       "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80",
     ]),
@@ -327,8 +356,8 @@ export const hotels: Hotel[] = [
     reviewCount: 91,
     amenities: ["Restaurant", "Wi‑Fi", "Mountain view", "Bonfire", "Workspace"],
     rooms: rooms("skyline", 10200, [
-      "https://images.unsplash.com/photo-1598928506311-c55ded39a2be?w=1200&q=80",
-      "https://images.unsplash.com/photo-1611892440507-42a784e015da?w=1200&q=80",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
       "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=1200&q=80",
     ]),
     priceFrom: 10200,
@@ -341,3 +370,39 @@ export const hotels: Hotel[] = [
     reviews: defaultReviews("Sethan"),
   },
 ];
+
+/**
+ * Placeholder content layer.
+ *
+ * The long-form copy, FAQs and video below are stand-ins. Keeping them in one
+ * decorator rather than copied into every record means real content replaces
+ * them in a single place — and it is obvious at a glance what is still fake.
+ */
+type BaseHotel = Omit<Hotel, "about" | "checkIn" | "checkOut" | "video" | "faqs">;
+
+function decorate(hotel: BaseHotel, i: number): Hotel {
+  const extra = [
+    ...GALLERY_POOL.slice(i % GALLERY_POOL.length),
+    ...GALLERY_POOL.slice(0, i % GALLERY_POOL.length),
+  ];
+  const images = [...hotel.images];
+  for (const src of extra) {
+    if (images.length >= GALLERY_SIZE) break;
+    if (!images.includes(src)) images.push(src);
+  }
+
+  return {
+    ...hotel,
+    images,
+    about: LOREM_LONG,
+    checkIn: "2:00 PM",
+    checkOut: "11:00 AM",
+    video: {
+      src: "/video/placeholder-ambient.mp4",
+      poster: hotel.images[1] ?? hotel.images[0],
+    },
+    faqs: LOREM_FAQS,
+  };
+}
+
+export const hotels: Hotel[] = baseHotels.map(decorate);
