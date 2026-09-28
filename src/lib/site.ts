@@ -1,12 +1,29 @@
+/**
+ * Canonical site URL for metadata, sitemap and robots.
+ * Order: NEXT_PUBLIC_SITE_URL (set this in Vercel to https://antarahotels.com),
+ * then Vercel's production domain, then localhost for local dev only.
+ * Without this, a deploy with no env var published localhost URLs.
+ */
+function resolveSiteUrl(): string {
+  if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL;
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL)
+    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  return "http://localhost:3000";
+}
+
 export const siteConfig = {
   name: "Antara",
-  tagline: "Curated stays in extraordinary destinations",
+  tagline: "Darshan with warmth",
   description:
     "Antara offers thoughtfully designed boutique hotels and retreats across India's most inspiring landscapes — warm hospitality, editorial design, and seamless booking.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: resolveSiteUrl(),
   contact: {
     email: "hello@antara.in",
     phone: "+91 98765 43210",
+    // Digits only, with country code, for wa.me links. Placeholder until the
+    // Katra WhatsApp Business number is live.
+    whatsapp: "919876543210",
     address: "12 Ridge Lane, Shimla, Himachal Pradesh 171001",
   },
   /**
