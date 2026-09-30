@@ -37,40 +37,6 @@
   }
 }
 
-@keyframes diya-breathe {
-  0%,
-  100% {
-    opacity: 0.85;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.06);
-  }
-}
-
-@keyframes diya-flicker {
-  0%,
-  100% {
-    transform: scale(1, 1);
-  }
-  30% {
-    transform: scale(0.94, 1.05);
-  }
-  60% {
-    transform: scale(1.04, 0.97);
-  }
-}
-
-@keyframes hero-zoom {
-  from {
-    transform: scale(1.06);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
 /* ── "The lit path" scene ──────────────────────────────────────────────
    Lamps carried by hand do not burn steady. Three phases, deliberately
    out of sync, read as flicker without animating 92 elements separately. */
