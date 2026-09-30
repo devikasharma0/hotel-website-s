@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AntaraMark } from "@/components/brand/AntaraMark";
+import { LitPathScene } from "@/components/art/LitPathScene";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/about" },
@@ -45,6 +46,26 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
+      <section className="relative isolate overflow-hidden">
+        <LitPathScene className="aspect-[4/3] w-full sm:aspect-[16/10]" />
+        {/* The crop shifts with viewport ratio, so the caption cannot rely on
+            landing over dark rock — a diagonal scrim guarantees contrast. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-ink/80 via-ink/10 to-transparent"
+        />
+        <div className="pointer-events-none absolute inset-0 flex items-end">
+          <div className="mx-auto w-full max-w-content px-5 pb-10 md:px-8 md:pb-16">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-cream/55">
+              The journey
+            </p>
+            <p className="mt-3 max-w-sm font-display text-2xl leading-snug text-cream md:text-3xl">
+              Somewhere ahead, a light is already burning.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-ink py-20 text-cream md:py-28">
         <div className="mx-auto flex max-w-content flex-col items-center px-5 text-center md:px-8">
           <AntaraMark className="h-44 w-auto text-cream md:h-56" />
